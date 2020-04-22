@@ -21,7 +21,7 @@ Une fois l'extension installée, il faudra remplacer dans la section [StdRESTful
      Server_url: .......
      ... 
    ```
- 999 doit être remplacé par l'id de votre station
+ 999 doit être remplacé par l'id de votre station et 
 XXXXXX doit être remplacé par le mot de passe de votre station
 
 **Pour que les changements soient effectifs, il faudra stopper et relancer weewx.**
