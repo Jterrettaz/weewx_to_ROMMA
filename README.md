@@ -1,7 +1,7 @@
 # weewx_to_ROMMA
-Extension Weewx pour envoyer depuis weewx les données sur le réseau de ROMMA
+Extension Weewx pour envoyer depuis weewx les données sur le réseau de ROMMA (http://www.romma.fr).
 
-Les données ne seront accepées par ROMMA que si l'identification de la station et son mot de passe sont correctement renseignés.
+Les données ne seront accepées par le serveur de ROMMA que si l'identifiant de la station et son mot de passe sont correctement renseignés et valides.
 Ces informations vous seront communiquées par ROMMA lors de l'enregistremenet de votre station.
 
 ##Installation de l'extension
