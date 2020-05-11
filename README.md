@@ -4,6 +4,8 @@ Extension Weewx pour envoyer depuis weewx les données sur le réseau de ROMMA (
 Les données ne seront accepées par le serveur de ROMMA que si l'identifiant de la station et son mot de passe sont correctement renseignés et valides.
 Ces informations vous seront communiquées par ROMMA lors de l'enregistremenet de votre station.
 
+**Important !** Avant d'installer cette extension, il faudra modifier la configuration de Weewx pour que les températures minimales et maximales de chaque période d'archivage soient enregistrées dans la base de donnée de weewx.  Voir : https://github.com/Jterrettaz/archive_min_max_temperature-to-schema
+
 ## Installation de l'extension
 Depuis le terminal :
   ```
