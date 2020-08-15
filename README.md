@@ -9,7 +9,7 @@ Ces informations vous seront communiquées par ROMMA lors de l'enregistrement de
 Depuis le terminal :
   ```
   wget http://romma.fr/weewx/romma.zip
-  wee_extension --install=romma.zip
+  sudo wee_extension --install=romma.zip
   ```
 Une fois l'extension installée, il faudra remplacer dans la section [StdRESTful] [[Romma]] de weewx.conf les champs id et password par les vôtres:
   ```
