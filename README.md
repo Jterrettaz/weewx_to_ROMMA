@@ -6,7 +6,9 @@ Ces informations vous seront communiquées par ROMMA lors de l'enregistrement de
 
 
 ## Installation de l'extension
-Depuis le terminal :
+If faut tout d'abord configurer weewx pour que les températures minimles et maximales de chaque enregistrement soient sauvegarder dans la base de donnée de weewx - voir https://github.com/Jterrettaz/archive_min_max_temperature-to-schema
+
+Ensuite, depuis le terminal :
   ```
   wget http://romma.fr/weewx/romma.zip
   sudo wee_extension --install=romma.zip
