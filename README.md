@@ -19,12 +19,12 @@ Une fois l'extension installée, il faudra remplacer dans la section [StdRESTful
    ...
    ...
   [[Romma]]
-     id = 999,
+     id = 99
      password = XXXXXX
      server_url = https://www.romma.fr/donneesdeweewx.php
      ... 
    ```
- 999 doit être remplacé par l'id de votre station et 
+ 99 doit être remplacé par l'id de votre station et 
 XXXXXX doit être remplacé par le mot de passe de votre station
 
 **Pour que les changements soient effectifs, il faudra stopper et relancer weewx.**
