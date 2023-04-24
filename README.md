@@ -19,9 +19,9 @@ Une fois l'extension installée, il faudra remplacer dans la section [StdRESTful
    ...
    ...
   [[Romma]]
-     id : 999,
-     password: XXXXXX
-     Server_url: https://www.romma.fr/donneesdeweewx.php
+     id = 999,
+     password = XXXXXX
+     server_url = https://www.romma.fr/donneesdeweewx.php
      ... 
    ```
  999 doit être remplacé par l'id de votre station et 
