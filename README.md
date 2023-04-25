@@ -51,7 +51,7 @@ Il faut tout d'abord configurer weewx pour que les températures minimales et ma
   ```
   sudo /usr/bin/wee_extension --install=romma.zip
   ```
-  4.Une fois l'extension installée, il faudra remplacer dans la section [StdRESTful] [[Romma]] de weewx.conf les champs id et password par les vôtres, et modifier l'url du serveur  :
+  4.Une fois l'extension installée, il faudra remplacer dans la section [StdRESTful] [[Romma]] de weewx.conf les champs id et password par les vôtres, et vérifier l'url du serveur  :
   ```
   [StdRESTful] 
    ...
