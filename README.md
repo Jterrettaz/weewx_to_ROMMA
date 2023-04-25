@@ -14,11 +14,11 @@ Ensuite, depuis le terminal :
   ```
   puis
   ```
-  sudo wee_extension --install=romma.zip
+  sudo wee_extension --install=latest.zip
   ```
   En cas d'erreur (commande introuvable) et si weewx a été installé avec setup.py :
   ```
-  sudo /home/weewx/bin/wee_extension --install=romma.zip
+  sudo /home/weewx/bin/wee_extension --install=latest.zip
   ```
   ou si weewx a été installé depuis un package DEB ou RPM:
   ```
