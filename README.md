@@ -22,7 +22,7 @@ Ensuite, depuis le terminal :
   ```
   ou si weewx a été installé depuis un package DEB ou RPM:
   ```
-  sudo /usr/bin/wee_extension --install=romma.zip
+  sudo /usr/bin/wee_extension --install=latest.zip
   ```
 Une fois l'extension installée, il faudra remplacer dans la section [StdRESTful] [[Romma]] de weewx.conf les champs id et password par les vôtres, et modifier l'url du serveur  :
   ```
