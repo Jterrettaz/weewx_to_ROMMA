@@ -31,7 +31,7 @@ Il faut tout d'abord configurer weewx pour que les températures minimales et ma
        sudo /usr/bin/wee_database --add-column=lowOutTemp
        sudo /usr/bin/wee_database --add-column=highOutTemp
        ```
-  3. Redémarrer Weewx
+ 
   
   Les 2 nouveaux champs, **lowOutTemp** and **highOutTemp** sont maintenant ajoutés chaque fois qu'un enregistrement d'archive est ajouté dans la base de données d'archive de Weewx.
 
@@ -63,6 +63,8 @@ Une fois l'extension installée, il faudra remplacer dans la section [StdRESTful
      ... 
    ```
  999 doit être remplacé par l'id de votre station et 
+ 
+ 
 XXXXXX doit être remplacé par le mot de passe de votre station
 
 **Pour que les changements soient effectifs, il faudra stopper et relancer weewx.**
