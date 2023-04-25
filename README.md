@@ -6,9 +6,36 @@ Ces informations vous seront communiquées par ROMMA lors de l'enregistrement de
 
 
 ## Installation de l'extension
-Il faut tout d'abord configurer weewx pour que les températures minimales et maximales de chaque enregistrement soient sauvegardés dans la base de donnée de weewx - voir https://github.com/Jterrettaz/archive_min_max_temperature-to-schema
+Il faut tout d'abord configurer weewx pour que les températures minimales et maximales de chaque enregistrement soient sauvegardés dans la base de donnée de weewx :
+ 1. Ajouter à la fin du fichier **extensions.py** (situé dans le dossier "utilisateur" de weewx (le plus souvent /usr/share/weewx/user ou /home/weewx/bin/user)les lignes suivantes :
+ ```python
+   import weewx.units
+   weewx.units.obs_group_dict['lowOutTemp'] = 'group_temperature'
+   weewx.units.obs_group_dict['highOutTemp'] = 'group_temperature'
+ ```
+ 
+ 2. Stopper Weewx et mettre à jour la base de donnée avec les nouveaux champs (**Weewx v4.5.0 ou plus récent**). 
+ Dans une fenêtre terminal:
+       ```python
+       sudo wee_database --add-column=lowOutTemp
+       sudo wee_database --add-column=highOutTemp
+       ```
+    En cas d'erreur (commande introuvable) et si weewx a été installé avec setup.py : 
+       ```python
+       sudo /home/weewx/bin/wee_database --add-column=lowOutTemp
+       sudo /home/weewx/bin/wee_database --add-column=highOutTemp
+       ```
+    
+    ou si weewx a été installé depuis un package DEB ou RPM:
+       ```python
+       sudo /usr/bin/wee_database --add-column=lowOutTemp
+       sudo /usr/bin/wee_database --add-column=highOutTemp
+       ```
+  3. Redémarrer Weewx
+  
+  Les 2 nouveaux champs, **lowOutTemp** and **highOutTemp** sont maintenant ajoutés chaque fois qu'un enregistrement d'archive est ajouté dans la base de données d'archive de Weewx.
 
-Ensuite, depuis le terminal :
+Ensuite, depuis le terminal, installer l'extension:
   ```
   wget https://github.com/Jterrettaz/weewx_to_ROMMA/archive/refs/tags/romma.zip
   ```
