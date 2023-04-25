@@ -10,7 +10,7 @@ Il faut tout d'abord configurer weewx pour que les températures minimles et max
 
 Ensuite, depuis le terminal :
   ```
-  wget http://romma.fr/weewx/romma.zip
+  wget https://www.romma.fr/weewx/romma.zip
   sudo wee_extension --install=romma.zip
   ```
 Une fois l'extension installée, il faudra remplacer dans la section [StdRESTful] [[Romma]] de weewx.conf les champs id et password par les vôtres, et modifier l'url du serveur  :
