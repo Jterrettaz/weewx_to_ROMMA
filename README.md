@@ -35,7 +35,7 @@ Il faut tout d'abord configurer weewx pour que les températures minimales et ma
   
   Les 2 nouveaux champs, **lowOutTemp** and **highOutTemp** sont maintenant ajoutés chaque fois qu'un enregistrement d'archive est ajouté dans la base de données d'archive de Weewx.
 
-Ensuite, depuis le terminal, installer l'extension:
+  3. Ensuite, depuis le terminal, installer l'extension:
   ```
   wget https://github.com/Jterrettaz/weewx_to_ROMMA/archive/refs/tags/romma.zip
   ```
@@ -51,7 +51,7 @@ Ensuite, depuis le terminal, installer l'extension:
   ```
   sudo /usr/bin/wee_extension --install=romma.zip
   ```
-Une fois l'extension installée, il faudra remplacer dans la section [StdRESTful] [[Romma]] de weewx.conf les champs id et password par les vôtres, et modifier l'url du serveur  :
+  4.Une fois l'extension installée, il faudra remplacer dans la section [StdRESTful] [[Romma]] de weewx.conf les champs id et password par les vôtres, et modifier l'url du serveur  :
   ```
   [StdRESTful] 
    ...
