@@ -10,7 +10,7 @@ Il faut tout d'abord configurer weewx pour que les températures minimles et max
 
 Ensuite, depuis le terminal :
   ```
-  wget https://github.com/Jterrettaz/weewx_to_ROMMA/archive/refs/tags/romma.zip
+  wget https://github.com/Jterrettaz/weewx_to_ROMMA/archive/refs/tags/latest.zip
   ```
   puis
   ```
